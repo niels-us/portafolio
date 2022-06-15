@@ -47,7 +47,12 @@ a:hover {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Barlow-ExtraBold', sans-serif;
 }
 
@@ -120,7 +125,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Barlow-ExtraBold', sans-serif;
 }
 
-#header .profile h1 a, #header .profile h1 a:hover {
+#header .profile h1 a,
+#header .profile h1 a:hover {
   color: #fff;
   text-decoration: none;
 }
@@ -154,6 +160,7 @@ h1, h2, h3, h4, h5, h6 {
   #header {
     left: -300px;
   }
+
   #main {
     margin-left: 0;
   }
@@ -180,7 +187,8 @@ h1, h2, h3, h4, h5, h6 {
   white-space: nowrap;
 }
 
-.nav-menu a, .nav-menu a:focus {
+.nav-menu a,
+.nav-menu a:focus {
   display: flex;
   align-items: center;
   color: #a8a9b4;
@@ -190,19 +198,26 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 15px;
 }
 
-.nav-menu a i, .nav-menu a:focus i {
+.nav-menu a i,
+.nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
 
-.nav-menu a:hover, .nav-menu .active, .nav-menu .active:focus, .nav-menu li:hover>a {
+.nav-menu a:hover,
+.nav-menu .active,
+.nav-menu .active:focus,
+.nav-menu li:hover>a {
   text-decoration: none;
   color: #fff;
   transform: scale(1.1);
 }
 
-.nav-menu a:hover i, .nav-menu .active i, .nav-menu .active:focus i, .nav-menu li:hover>a i {
+.nav-menu a:hover i,
+.nav-menu .active i,
+.nav-menu .active:focus i,
+.nav-menu li:hover>a i {
   color: #149ddd;
   transform: scale(1.3);
 }
@@ -299,11 +314,13 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 35px;
     line-height: 36px;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #hero p {
     font-size: 20px;
     line-height: 24px;
@@ -423,7 +440,7 @@ section {
   position: relative;
   padding-bottom: 30px;
   background: url("../img/fact-bg.jpg") top fixed;
-  background-size:cover;
+  background-size: cover;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
 }
 
@@ -680,7 +697,8 @@ section {
   margin-bottom: 5px;
 }
 
-.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.filter-active {
   color: #149ddd;
 }
 
@@ -847,7 +865,7 @@ section {
 .services {
   position: relative;
   background: url("../img/services-bg.jpg") top fixed;
-  background-size: cover;  
+  background-size: cover;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -937,7 +955,8 @@ section {
   background: #e2e2e7;
 }
 
-.testimonials .testimonials-carousel, .testimonials .testimonials-slider {
+.testimonials .testimonials-carousel,
+.testimonials .testimonials-slider {
   overflow: hidden;
 }
 
@@ -968,7 +987,8 @@ section {
   margin: 0;
 }
 
-.testimonials .testimonial-item .quote-icon-left, .testimonials .testimonial-item .quote-icon-right {
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
   color: #c3e8fa;
   font-size: 26px;
 }
@@ -1048,7 +1068,7 @@ section {
 
 .contact {
   padding-bottom: 100px;
-  background-color: rgba(4, 11, 20,0.6);
+  background-color: rgba(4, 11, 20, 0.6);
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.5);
 }
 
@@ -1073,6 +1093,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+
 .contact .info h4 {
   padding: 0 0 0 60px;
   font-size: 22px;
@@ -1086,6 +1107,30 @@ section {
   margin-bottom: 20px;
   font-size: 14px;
   color: #173b6c;
+}
+
+.formPersonal ul i {
+  font-size: 20px;
+  color: #149ddd;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #dff3fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.formPersonal ul li {
+  margin-bottom: 20px;
+  color: #173b6c;
+}
+
+.formPersonal ul li:hover i {
+  background: #149ddd;
+  color: #fff;
 }
 
 .contact .info .email p {
@@ -1116,7 +1161,9 @@ section {
   color: #fff;
 }
 
-.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
   background: #149ddd;
   color: #fff;
 }
@@ -1190,7 +1237,8 @@ section {
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input, .contact .php-email-form textarea {
+.contact .php-email-form input,
+.contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1221,6 +1269,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1230,6 +1279,7 @@ section {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -1273,9 +1323,11 @@ section {
   .breadcrumbs .d-flex {
     display: block !important;
   }
+
   .breadcrumbs ol {
     display: block;
   }
+
   .breadcrumbs ol li {
     display: inline-block;
   }
@@ -1347,4 +1399,3 @@ section {
   -ms-transform: scale(1.1) rotate(6deg);
   transform: scale(1.1) rotate(6deg);
 }
-
