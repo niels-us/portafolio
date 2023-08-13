@@ -1,5 +1,3 @@
-# portafolio
-Portafolio
 <h2 align="center">Hola, Soy Niels Uchpa Salvador! :stars:</h2>
 
 [![Twitter](https://img.shields.io/badge/-Twitter-1ca0f1?style=flat&labelColor=1ca0f1&logo=twitter&logoColor=white&link=https://twitter.com/Nielz_us)](https://twitter.com/Nielz_us)
