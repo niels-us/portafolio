@@ -9,7 +9,7 @@
             "QA Automation"
         ],
         "cv_button": "DESCARGAR CV",
-        "cv_file": "assets/cv/cv_es.pdf",
+        "cv_file": "assets/cv/Niels_US_ES.pdf",
         "about_title": "Sobre mí",
         "about_role": "Full Stack Web Developer.",
         "about_description": "Soy un profesional altamente responsable, con facilidad para trabajar en equipo, interactuar con los clientes, con disposición permanente al aprendizaje y entrega de valor a la empresa.",
@@ -109,7 +109,7 @@
             "QA Automation Engineer"
         ],
         "cv_button": "DOWNLOAD CV",
-        "cv_file": "assets/cv/cv_en.pdf",
+        "cv_file": "assets/cv/Niels_US_EN.pdf",
         "about_title": "About Me",
         "about_role": "Full Stack Web Developer.",
         "about_description": "I am a highly responsible professional, with strong teamwork skills, customer interaction abilities, a continuous learning mindset, and a focus on delivering value to the company.",
@@ -209,7 +209,7 @@
             "QA Automation Engineer"
         ],
         "cv_button": "SCARICA CV",
-        "cv_file": "assets/cv/cv_it.pdf",
+        "cv_file": "assets/cv/Niels_US_IT.pdf",
         "about_title": "Chi sono",
         "about_role": "Sviluppatore Web Full Stack.",
         "about_description": "Sono un professionista altamente responsabile, con capacità di lavorare in team, interagire con i clienti, apprendere continuamente e offrire valore all'azienda.",

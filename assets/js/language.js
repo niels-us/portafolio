@@ -65,11 +65,11 @@ async function detectLanguage() {
         const res = await fetch("https://ipapi.co/json/");
         const data = await res.json();
         if (data.country_code === "IT") return "it";
-        if (["PE","ES","MX","AR","CL","CO"].includes(data.country_code)) return "es";
+        if (["PE", "ES", "MX", "AR", "CL", "CO"].includes(data.country_code)) return "es";
         return "en";
     } catch {
         const nav = navigator.language.split("-")[0];
-        return ["es","en","it"].includes(nav) ? nav : "es";
+        return ["es", "en", "it"].includes(nav) ? nav : "es";
     }
 }
 
