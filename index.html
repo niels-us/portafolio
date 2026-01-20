@@ -53,33 +53,45 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre mi</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i
-                class="bi bi-file-earmark-code"></i><span>Conocimientos</span></a>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span
+                data-key="nav_home">Inicio</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-key="nav_about">Sobre
+                mi</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-file-earmark-code"></i><span
+                data-key="nav_skills">Conocimientos</span></a>
           </li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span></span>Experiencia</a>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span
+                data-key="nav_experience"></span>Experiencia</a>
           </li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
-              <span>Proyectos</span></a></li>
-          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>
-          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>
+              <span data-key="nav_projects">Proyectos</span></a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span
+                data-key="nav_services">Servicios</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span
+                data-key="nav_contact">Contacto</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+
     <div class="hero-container" data-aos="fade-up">
       <h1>Niels Uchpa</h1>
-      <p>Soy <span class="typed" data-typed-items="Backend Developer, Frontend Developer, Full Stack
-        Developer, VBA Developer, QA Automation"></span></p>
+      <p>
+        <span data-key="hero_intro">Soy</span>
+        <span class="typed" id="typed-text"></span>
+      </p>
     </div>
     <div class="hero-container d-flex justify-content-center mt-5 pt-5 opacity-75" data-aos="flip-left">
-      <a download="Niels Uchpa" href="assets/cv/cv.pdf" class="btn btn-primary rounded-1 px-3 py-2">DESCARGA CV</a>
+      <a id="btn-cv" data-key="cv_button" href="assets/cv/cv_es.pdf" class="btn btn-primary rounded-1 px-3 py-2"
+        download>
+        DESCARGA CV
+      </a>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
 
@@ -88,7 +100,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Sobre mí</h2>
+          <h2 data-key="about_title" data-aos="flip-left">Sobre mí</h2>
           <p></p>
         </div>
 
@@ -99,39 +111,54 @@
             <img src="assets/img/profile-img.gif" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Full Stack Web Developer.</h3>
+            <h3 data-key="about_role">Full Stack Web Developer.</h3>
             <!-- <p class="fst-italic"> -->
-            <p>
+            <p data-key="about_description">
               Soy un profesional altamente responsable, con facilidad para trabajar en equipo, interactuar con los
               clientes, con disposición permanente al aprendizaje y entrega de valor a la empresa..
             </p>
             <div class="row formPersonal">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-person-lines-fill"></i><strong>&nbsp;Nombre:</strong> <span>Niels Uchpa</span>
+                  <li><i class="bi bi-person-lines-fill"></i><strong data-key="label_name">&nbsp;Nombre:</strong>
+                    <span>Niels Uchpa</span>
                   </li>
-                  <li><i class="bi bi-phone-fill"></i> <strong>&nbsp;Celular:</strong> <span>+39 333 127 0497</span>
+                  <li><i class="bi bi-phone-fill"></i> <strong data-key="label_phone">&nbsp;Celular:</strong> <span>+39
+                      333 127 0497</span>
                   </li>
-                  <li><i class="bi bi-geo-alt-fill"></i> <strong>&nbsp;Ciudad:</strong> <span>Lima, Perú</span></li>
+                  <li><i class="bi bi-geo-alt-fill"></i> <strong data-key="label_city">&nbsp;Ciudad:</strong>
+                    <span>Lima, Perú</span>
+                  </li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-terminal-fill"></i> <strong>&nbsp;Perfil:</strong> <span>Systems Engineer</span>
+                  <li><i class="bi bi-terminal-fill"></i> <strong data-key="label_profile">&nbsp;Perfil:</strong>
+                    <span>Systems Engineer</span>
                   </li>
-                  <li><i class="bi bi-envelope-fill"></i></i> <strong>&nbsp;Correo:</strong>
+                  <li><i class="bi bi-envelope-fill"></i></i> <strong data-key="label_email">&nbsp;Correo:</strong>
                     <span>niels_us@outlook.com</span>
                   </li>
-                  <li><i class="bi bi-check-square-fill"></i> <strong>&nbsp;Freelance:</strong> <span>Disponible</span>
+                  <li><i class="bi bi-check-square-fill"></i> <strong
+                      data-key="label_freelance">&nbsp;Freelance:</strong> <span
+                      data-key="freelance_status">Disponible</span>
                   </li>
                 </ul>
               </div>
             </div>
             <p>
-              Siempre busco trabajar con personas que son idealistas como yo, y que están interesadas en crear y
-              trabajar en proyectos geniales, interesantes y significativos. <br> Envíame un <a href="#contact"> mensaje
-                <i class="bi bi-envelope-fill"></i></a>
-              si eso suena como una taza de cafe.
+              <span data-key="about_final_text">
+                Siempre busco trabajar con personas que son idealistas como yo,
+                y que están interesadas en crear y trabajar en proyectos geniales,
+                interesantes y significativos.
+              </span>
+              <br>
+              <span data-key="about_contact_text">Envíame un</span>
+              <a href="#contact">
+                <span data-key="about_contact_link">mensaje</span>
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+              <span data-key="about_coffee">si eso suena como una taza de café.</span>
             </p>
           </div>
         </div>
@@ -145,7 +172,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Satisfacción</h2>
+          <h2 data-key="facts_title" data-aos="flip-left">Satisfacción</h2>
           <!-- <p></p> -->
         </div>
 
@@ -156,7 +183,7 @@
               <div class="icon"><i class="bi bi-emoji-smile"></i></div>
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="2"
                 class="purecounter"></span>
-              <p><strong>Clientes Satisfechos</strong></p>
+              <p><strong data-key="facts_clients">Clientes Satisfechos</strong></p>
             </div>
           </div>
 
@@ -165,7 +192,7 @@
               <i class="bi bi-journal-richtext"></i>
               <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="2"
                 class="purecounter"></span>
-              <p><strong>Proyectos Realizados</strong></p>
+              <p><strong data-key="facts_projects">Proyectos Realizados</strong></p>
             </div>
           </div>
 
@@ -174,7 +201,7 @@
               <i class="bi bi-headset"></i>
               <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="2"
                 class="purecounter"></span>
-              <p><strong>Horas de Soporte</strong></p>
+              <p><strong data-key="facts_support">Horas de Soporte</strong></p>
             </div>
           </div>
         </div>
@@ -187,7 +214,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Conocimientos</h2>
+          <h2 data-key="skills-title" data-aos="flip-left">Conocimientos</h2>
         </div>
 
         <div class="row skills-content">
@@ -293,19 +320,19 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Experiencia</h2>
+          <h2 data-key="resume_title" data-aos="flip-left">Experiencia</h2>
           <!-- <p></p> -->
         </div>
 
         <div class="row">
           <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Educación</h3>
+            <h3 class="resume-title" data-key="resume_education">Educación</h3>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Desarrollo web full stack</h4>
+                <h4 data-key="edu_fs_title">Desarrollo web full stack</h4>
                 <h5>2021 - 2021</h5>
                 <p><a href="https://codigo.edu.pe/" target="_blank"><em>CODIGO BY TECSUP</em></a></p>
-                <p>CodiGo by Tecsup desarrollan talento digital y acelera la innovación en las
+                <p data-key="edu_fs_desc">CodiGo by Tecsup desarrollan talento digital y acelera la innovación en las
                   empresas, aplicando el formato Bootcamp con metodologías ágiles y una enseñanza
                   colaborativa. Cuenta con una importantes empresas aliadas en
                   desarrollo de software a nivel nacional.</p>
@@ -315,11 +342,12 @@
 
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Ingeniería en Sistemas</h4>
+                <h4 data-key="edu_systems_title">Ingeniería en Sistemas</h4>
                 <h5>2010 - 2015</h5>
                 <p><a href="https://www.uigv.edu.pe/" target="_blank"><em>UNIVERSIDAD INCA GARCILASO DE LA VEGA</em></a>
                 </p>
-                <p>La Universidad Inca Garcilaso de la Vega es una institución de educación universitaria, con 53
+                <p data-key="edu_systems_desc">La Universidad Inca Garcilaso de la Vega es una institución de educación
+                  universitaria, con 53
                   años de experiencia formando profesionales competitivos. Impulsar una educación superior innovadora,
                   basada en la investigación y el progreso tecnológico</p>
                 <p></p>
@@ -327,24 +355,29 @@
             </div>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Electricidad Industrial</h4>
+                <h4 data-key="edu_electricity_title">Electricidad Industrial</h4>
                 <h5>2004 - 2006</h5>
                 <p><a href="https://www.senati.edu.pe/" target="_blank"><em>SENATI</em></a></p>
-                <p><em>SENATI es una institución creada a iniciativa de la Sociedad Nacional de Industrias, con el
+                <!-- <p><em>SENATI es una institución creada a iniciativa de la Sociedad Nacional de Industrias, con el
                     objetivo de proporcionar formación y capacitación profesional en actividades industriales y también
                     otras actividad económica.</em></p>
-                <p></p>
+                <p></p> -->
+                <p data-key="edu_electricity_desc">
+                  SENATI es una institución creada a iniciativa de la Sociedad Nacional de Industrias,
+                  con el objetivo de proporcionar formación y capacitación profesional en actividades
+                  industriales y también otras actividad económica.
+                </p>
               </div>
             </div>
           </div>
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <h3 class="resume-title">Experiencia Profesional</h3>
+            <h3 class="resume-title" data-key="resume_experience">Experiencia Profesional</h3>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Backend Developer – Área Negocios Digitales </h4>
+                <h4 data-key="exp_softtek_title">Backend Developer – Área Negocios Digitales </h4>
                 <h5>2023 - Present</h5>
                 <p><a href="https://pamer.edu.pe/" target="_blank"><em>NEARSHORE PERU, (SOFTTEK)</em></a></p>
-                <p>
+                <p data-key="exp_softtek_desc">
                   Encargado de desarrollar, diseñar y configurar servicios API REST, desplegándolos en un entorno de
                   Arquitectura Domain Driven Design con AWS y tecnologías como Lambda, Step Functions, Framework
                   Serverless, TypeScript, Nest.js, DynamoDBy MySQL.
@@ -353,24 +386,23 @@
             </div>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Backend Developer – Área Negocios Digitales </h4>
+                <h4 data-key="exp_pamer_title">Backend Developer – Área Negocios Digitales </h4>
                 <h5>2022 - Present</h5>
                 <p><a href="https://pamer.edu.pe/" target="_blank"><em>CORPORACIÓN EDUCATIVA PAMER, (PAMER)</em></a></p>
-                <p>
+                <p data-key="exp_pamer_desc">
                   Responsable desarrollar, diseñar y configurar servicios API REST, desplegando en un contexto
                   de Arquitectura de Microservicios utilizando Amazon Web Services - AWS y herramientas como Node js /
-                  TypeScript /
-                  Nest js / PostgresSQL / MySQL.
+                  TypeScript / Nest js / PostgresSQL / MySQL.
                 </p>
               </div>
             </div>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>QA Automation – Área de Tecnología </h4>
+                <h4 data-key="exp_culqi_title">QA Automation – Área de Tecnología </h4>
                 <h5>2022 - 2022</h5>
                 <p><a href="https://culqi.com/" target="_blank"><em>CIA. INCUBADORA DE SOLUCIONES MOVILES,
                       (CULQI)</em></a></p>
-                <p>
+                <p data-key="exp_culqi_desc">
                   Responsable de automatizar aplicaciones de extremo a extremo, brindando visibilidad de la
                   calidad real de los productos, verificando que siempre estén por encima de los estándares de
                   calidad. Teconologias Cypress, Cucumber, Postman, Mongo DB y MySQL.
@@ -379,11 +411,11 @@
             </div>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Backend Developer - Área de Producción de Software 2021</h4>
+                <h4 data-key="exp_growby_title">Backend Developer - Área de Producción de Software 2021</h4>
                 <h5>2021 - 2021</h5>
                 <p><a href="https://growby.tech/" target="_blank"><em>HUB DE ESPECIALISTAS DIGITALES, (GROWBY)</em></a>
                 </p>
-                <p>
+                <p data-key="exp_growby_desc">
                   Responsable desarrollar, diseñar y configurar servicios API REST, desplegando en un
                   contexto de Arquitectura de Microservicios utilizando contenedores con Docker y
                   herramientas como Node js / Express / Mongo DB.
@@ -392,23 +424,23 @@
             </div>
             <div class="resume-item">
               <div class="resume-card" data-aos="flip-left">
-                <h4>Full Stack Developer - Área de Tecnologías de la Información</h4>
+                <h4 data-key="exp_nus_title">Full Stack Developer - Área de Tecnologías de la Información</h4>
                 <h5>2017 - 2020</h5>
                 <p><em>SOLUCIONES INFORMATICAS NUS, (NUS)</em></p>
-                <p>
+                <p data-key="exp_nus_desc">
                   Responsable de analizar, diseñar y desarrollar aplicaciones informáticas. Aplicando
                   tecnologías como HTML5, CSS3, Bootstrap, JavaScript, React.js, Python (Django),
                   PostgreSQL desplegando en Heroku, Git, GitHub.
-                  </li>
+                </p>
               </div>
             </div>
             <div class="resume-item" data-aos="flip-left">
               <div class="resume-card">
-                <h4>Analyst / Developer System - Área de Mantenimiento y Producción</h4>
+                <h4 data-key="exp_csi_title">Analyst / Developer System - Área de Mantenimiento y Producción</h4>
                 <h5>2016 - 2016</h5>
                 <p><a href="https://www.csiclosures.com/" target="_blank"><em>CLOSURES SYSTEMS INTERNATIONAL,
                       (CSI)</em></a></p>
-                <p>
+                <p data-key="exp_csi_desc">
                   Responsable en implementar el Sistema “Gerenciamiento de Producción”, cual centraliza
                   información de máquinas en tiempo real. Integrando las funcionalidades del PLC (controlador
                   lógico programable) y automatización con Excel (Visual Basic).
@@ -425,17 +457,17 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Proyectos</h2>
+          <h2 data-key="portfolio_title" data-aos="flip-left">Proyectos</h2>
           <!-- <p></p> -->
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">Desktop</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter="*" class="filter-active" data-key="portfolio_filter_all">All</li>
+              <li data-filter=".filter-app" data-key="portfolio_filter_desktop">Desktop</li>
+              <li data-filter=".filter-card" data-key="portfolio_filter_card">Card</li>
+              <li data-filter=".filter-web" data-key="portfolio_filter_web">Web</li>
             </ul>
           </div>
         </div>
@@ -446,8 +478,14 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/01.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/011.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="">Sistema de Gestión para Certificados<br><i class="bi bi-plus-lg"></i></a>
+                <a href="#" class="project-certificates" data-img-es="assets/img/portfolio/011_es.jpg"
+                  data-img-en="assets/img/portfolio/011_en.jpg" data-img-it="assets/img/portfolio/011_it.jpg">
+
+                  <span data-key="project_certificates">
+                    Sistema de Gestión para Certificados
+                  </span><br>
+                  <i class="bi bi-plus-lg"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -467,8 +505,13 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/03.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/033.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="">Sistema Gestión de Reclamos<br><i class="bi bi-plus-lg"></i></a>
+                <a href="#" class="project-certificates" data-img-es="assets/img/portfolio/033_es.jpg"
+                  data-img-en="assets/img/portfolio/033_en.jpg" data-img-it="assets/img/portfolio/033_it.jpg">
+                  <span data-key="project_certificates">
+                    Sistema Gestión de Reclamos
+                  </span><br>
+                  <i class="bi bi-plus-lg"></i>
+                </a>
                 <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
@@ -511,8 +554,19 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/07.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/077.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
-                  title="">Sistema Control de Indicadores<br><i class="bi bi-plus-lg"></i></a>
+                <!-- <a href="assets/img/portfolio/077.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  title="">Sistema Control de Indicadores<br><i class="bi bi-plus-lg"></i></a> -->
+                <!-- <a href="assets/img/portfolio/077.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                  <span data-key="project_indicators">Sistema Control de Indicadores</span><br>
+                  <i class="bi bi-plus-lg"></i>
+                </a> -->
+                <a href="#" class="project-certificates" data-img-es="assets/img/portfolio/077_es.jpg"
+                  data-img-en="assets/img/portfolio/077_en.jpg" data-img-it="assets/img/portfolio/077_it.jpg">
+                  <span data-key="project_certificates">
+                    Sistema Control de Indicadores
+                  </span><br>
+                  <i class="bi bi-plus-lg"></i>
+                </a>
                 <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
@@ -533,8 +587,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/09.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-us.github.io/Card/" data-gallery="portfolioGallery" title=""
-                  target="blank">Presentación Card Web<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-us.github.io/Card/" data-gallery="portfolioGallery" title=""
+                  target="blank">Presentación Card Web<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-us.github.io/Card/" data-gallery="portfolioGallery" title="" target="_blank">
+                  <span data-key="project_card">Presentación Card Web</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
                 <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
@@ -544,8 +602,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/10.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-us.github.io/buscador-de-peliculas/" data-gallery="portfolioGallery" class=""
-                  title="" target="blank">Buscardor de Peliculas<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-us.github.io/buscador-de-peliculas/" data-gallery="portfolioGallery" class=""
+                  title="" target="blank">Buscardor de Peliculas<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-us.github.io/buscador-de-peliculas/" target="_blank">
+                  <span data-key="project_movies">Buscador de Películas</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -554,8 +616,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/11.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-us.github.io/Mantenimiento-de-vehiculos/" data-gallery="portfolioGallery"
-                  title="" target="blank">Mantenimiento de Autos<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-us.github.io/Mantenimiento-de-vehiculos/" data-gallery="portfolioGallery"
+                  title="" target="blank">Mantenimiento de Autos<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-us.github.io/Mantenimiento-de-vehiculos/" target="_blank">
+                  <span data-key="project_cars">Mantenimiento de Autos</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -564,8 +630,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/12.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-frontend.herokuapp.com/" data-gallery="portfolioGallery" title=""
-                  target="blank">Tienda Online<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-frontend.herokuapp.com/" data-gallery="portfolioGallery" title=""
+                  target="blank">Tienda Online<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-frontend.herokuapp.com/" target="_blank">
+                  <span data-key="project_store">Tienda Online</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -574,8 +644,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/13.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-backoffice.herokuapp.com/admin/" data-gallery="portfolioGallery" title=""
-                  target="blank">Back Office Tienda<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-backoffice.herokuapp.com/admin/" data-gallery="portfolioGallery" title=""
+                  target="blank">Back Office Tienda<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-backoffice.herokuapp.com/admin/" target="_blank">
+                  <span data-key="project_backoffice">Back Office Tienda</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -584,8 +658,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/14.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-dashboard.herokuapp.com/" data-gallery="portfolioGallery" title=""
-                  target="blank">Dashboard Ventas<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-dashboard.herokuapp.com/" data-gallery="portfolioGallery" title=""
+                  target="blank">Dashboard Ventas<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-dashboard.herokuapp.com/" target="_blank">
+                  <span data-key="project_dashboard">Dashboard Ventas</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -594,8 +672,12 @@
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/15.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="https://niels-us.github.io/ConsultorMsExcel/" data-gallery="portfolioGallery" title=""
-                  target="blank">Consultoria Excel<br><i class="bx bx-link"></i></a>
+                <!-- <a href="https://niels-us.github.io/ConsultorMsExcel/" data-gallery="portfolioGallery" title=""
+                  target="blank">Consultoria Excel<br><i class="bx bx-link"></i></a> -->
+                <a href="https://niels-us.github.io/ConsultorMsExcel/" target="_blank">
+                  <span data-key="project_excel">Consultoría Excel</span><br>
+                  <i class="bx bx-link"></i>
+                </a>
               </div>
             </div>
           </div>
@@ -609,27 +691,29 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Servicios</h2>
+          <h2 data-key="services_title" data-aos="flip-left">Servicios</h2>
           <!-- <p>Conviértenos en tu Socio Estratégico - Ofrecemos.</p> -->
         </div>
 
         <div class="row">
           <div class="col-lg-4 col-md-6 icon-box" data-aos="flip-left" data-aos-delay="100">
             <div class="icon"><i class="bi bi-file-earmark-spreadsheet"></i></div>
-            <h4 class="title"><a href="">DESARROLLO VBA</a></h4>
-            <p class="description">Lenguaje que utilizan las Macros para
+            <h4 class="title"><a href="" data-key="service_vba_title">DESARROLLO VBA</a></h4>
+            <p class="description" data-key="service_vba_desc">Lenguaje que utilizan las Macros para
               automatizar cualquier proceso que tus archivos Ms Office te obliguen a hacer de forma manual.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="flip-left" data-aos-delay="200">
             <div class="icon"><i class="bi bi-tv"></i></div>
-            <h4 class="title"><a href="">DESARROLLO FRONT-END</a></h4>
-            <p class="description">Construir los componentes visuales de un sitio web. Usando
+            <h4 class="title"><a href="" data-key="service_front_title" data-key="service_back_title">DESARROLLO
+                FRONT-END</a></h4>
+            <p class="description" data-key="service_front_desc">Construir los componentes visuales de un sitio web.
+              Usando
               HTML, CSS, Javascript, ApiRest y React, construyo sitios web rápidos e interactivos.</p>
           </div>
           <div class="col-lg-4 col-md-6 icon-box" data-aos="flip-left" data-aos-delay="300">
             <div class="icon"><i class="bi bi-server"></i></i></div>
-            <h4 class="title"><a href="">DESARROLLO BACK-END</a></h4>
-            <p class="description">Diseñar la lógica solicitada en un
+            <h4 class="title"><a href="" data-key="service_back_title">DESARROLLO BACK-END</a></h4>
+            <p class="description" data-key="service_back_desc">Diseñar la lógica solicitada en un
               sitio web. Usando python, Node.js, trabajo del lado del servidor y proceso la información
               recibida del frontend.</p>
           </div>
@@ -643,7 +727,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Recomendaciones</h2>
+          <h2 data-key="testimonials_title" data-aos="flip-left">Recomendaciones</h2>
           <!-- <p></p> -->
         </div>
 
@@ -652,44 +736,44 @@
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                <p data-key="testi_1_text">
+                  <!-- <i class="bx bxs-quote-alt-left quote-icon-left"></i> -->
                   Con Niels cada proyecto se realiza de manera oportuna y se entrega
                   exactamente como se describe. Su experiencia lo convierten en una parte invaluable de nuestro proceso.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <!-- <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                 </p>
                 <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
                 <h3>Jesus Gutarra</h3>
-                <h4>Jefe de Control de Calidad</h4>
+                <h4 data-key="testi_1_role">Jefe de Control de Calidad</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                <p data-key="testi_2_text">
+                  <!-- <i class="bx bxs-quote-alt-left quote-icon-left"></i> -->
                   Trabajar con Niels fue mejor de lo esperado y teníamos expectativas muy altas. Es un desarrollador
                   increíblemente talentoso, pero realmente destaca es su ética de trabajo y su enfoque constante.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <!-- <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                 </p>
                 <img src="assets/img/testimonials/testimonials-2.jfif" class="testimonial-img" alt="">
                 <h3>Miguel Huarcaya</h3>
-                <h4>Desarrollador Backend</h4>
+                <h4 data-key="testi_2_role">Desarrollador Backend</h4>
               </div>
             </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                <p data-key="testi_3_text">
+                  <!-- <i class="bx bxs-quote-alt-left quote-icon-left"></i> -->
                   Niels es un desarrollador con la tenacidad y la confianza para profundizar realmente en escenarios
                   complicados y la fricción de colaboración que se necesita para producir un excelente trabajo.
 
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  <!-- <i class="bx bxs-quote-alt-right quote-icon-right"></i> -->
                 </p>
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
                 <h3>Juan Real</h3>
-                <h4>Jefe de Producción</h4>
+                <h4 data-key="testi_3_role">Jefe de Producción</h4>
               </div>
             </div><!-- End testimonial item -->
           </div>
@@ -704,7 +788,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2 data-aos="flip-left">Contacto</h2>
+          <h2 data-aos="flip-left" data-key="contact_title">Contacto</h2>
           <p></p>
         </div>
 
@@ -714,20 +798,20 @@
             <div class="info rounded-2">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Ubicacion:</h4>
-                <p>Lima, Perú</p>
+                <h4 data-key="contact_location_title">Ubicacion:</h4>
+                <p data-key="contact_location_value">Lima, Perú</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>niels_us@outlook.com</p>
+                <h4 data-key="contact_email_title">Email:</h4>
+                <p data-key="contact_email_value">niels_us@outlook.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Celular:</h4>
-                <p>+51 980400440</p>
+                <h4 data-key="contact_phone_title">Celular:</h4>
+                <p data-key="contact_phone_value">+51 980400440</p>
               </div>
             </div>
           </div>
@@ -736,28 +820,29 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form rounded-2">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Nombre</label>
+                  <label for="name" data-key="contact_form_name">Nombre</label>
                   <input type="text" name="name" class="form-control rounded-2" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="email">Email</label>
+                  <label for="email" data-key="contact_form_email">Email</label>
                   <input type="email" class="form-control rounded-2" name="email" id="email" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="subject">Asunto</label>
+                <label for="subject" data-key="contact_form_subject">Asunto</label>
                 <input type="text" class="form-control rounded-2" name="subject" id="subject" required>
               </div>
               <div class="form-group">
-                <label for="message">Mensaje</label>
+                <label for="message" data-key="contact_form_message">Mensaje</label>
                 <textarea class="form-control rounded-2" name="message" rows="10" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading" data-key="contact_loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
+                <div class="sent-message" data-key="contact_success">Tu mensaje ha sido enviado. ¡Gracias!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" data-key="contact_send_button">Enviar Mensaje</button>
+              </div>
             </form>
           </div>
         </div>
@@ -786,26 +871,32 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!--REDES FLOTANTES-->
-  <div class='redes-flotantes'>
-    <div class="separator" style="clear: both; text-align: left;"></div>
-    <div class="separator" style="clear: both; text-align: center;"></div>
-    <div class="separator" style="clear: both; text-align: center;"></div>
-    <div class="separator" style="clear: both; text-align: left;">
-      <a href="https://api.whatsapp.com/send?phone=+51980400440&text=Hola!%20en%20que%20puedo%20ayudarte"
-        style="clear: left; float: left; margin-bottom: 0.2em; margin-right: 0.2em;" target="_blank"><img border="0"
-          data-original-height="59" data-original-width="59" src="./assets/img/iconFlotante/whatsapp icono.png"
-          alt="whatsapp" /></a>
+  <div class="redes-flotantes">
+
+    <div class="lang-float">
+      <img src="./assets/img/iconFlotante/lang.png" alt="Idioma" class="lang-btn">
+
+      <div class="lang-options">
+        <span data-lang="es">ES</span>
+        <span data-lang="en">EN</span>
+        <span data-lang="it">IT</span>
+      </div>
     </div>
-    <div class="separator" style="clear: both; text-align: center;">
-      <a href="https://github.com/niels-us" style="clear:left; float: left; margin-bottom: 0.2em; margin-right: 0.2em;"
-        target="_blank"><img border="0" data-original-height="59" data-original-width="59"
-          src="./assets/img/iconFlotante/github.png" alt="github" /></a>
-      <a href="https://linkedin.com/in/nielsuchpa"
-        style="clear:left; float: left; margin-bottom: 0.2em; margin-right: 0.2em;" target="_blank"><img border="0"
-          data-original-height="59" data-original-width="59" src="./assets/img/iconFlotante/linkeding.png"
-          alt="linkedin" /></a>
-    </div>
+
+    <a href="https://api.whatsapp.com/send?phone=+51980400440" target="_blank">
+      <img src="./assets/img/iconFlotante/whatsapp icono.png">
+    </a>
+
+    <a href="https://github.com/niels-us" target="_blank">
+      <img src="./assets/img/iconFlotante/github.png">
+    </a>
+
+    <a href="https://linkedin.com/in/nielsuchpa" target="_blank">
+      <img src="./assets/img/iconFlotante/linkeding.png">
+    </a>
+
   </div>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -819,8 +910,13 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
-  <!-- Template Main JS File -->
+
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
+
+
+
 
 </body>
 

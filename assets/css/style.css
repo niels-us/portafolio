@@ -1062,6 +1062,16 @@ section {
   transform: scale(1.05) translatey(10px) rotate(0deg);
 }
 
+#testimonials .testimonial-item p {
+  white-space: normal;
+}
+
+@media (min-width: 1200px) {
+  #testimonials .testimonial-item p {
+    white-space: pre-line;
+  }
+}
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
@@ -1372,15 +1382,17 @@ section {
 
 .redes-flotantes {
   position: fixed;
-  right: 8px;
-  top: 66%;
+  right: 11px;
+  top: 54%;
   z-index: 10;
 }
+
 
 .redes-flotantes img {
   float: right;
   clear: right;
-  margin: 0;
+  /* margin: 0; */
+  margin-bottom: 8px;
   -moz-transform: scale(.8);
   -webkit-transform: scale(.8);
   -o-transform: scale(.8);
@@ -1399,3 +1411,50 @@ section {
   -ms-transform: scale(1.1) rotate(6deg);
   transform: scale(1.1) rotate(6deg);
 }
+
+.lang-float {
+  position: relative;
+  float: right;
+  clear: right;
+}
+
+.lang-btn {
+  cursor: pointer;
+}
+
+.lang-options {
+  position: absolute;
+  right: 45px;
+  top: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+  display: none;
+  flex-direction: column;
+  font-size: 13px;
+  overflow: hidden;
+}
+
+.lang-options span {
+  padding: 8px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.lang-options span:hover {
+  background: #f1f1f1;
+}
+
+.lang-float:hover .lang-options {
+  display: flex;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+}
+
+.back-to-top i {
+  font-size: 36px;
+}
+
