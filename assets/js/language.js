@@ -57,27 +57,19 @@ document.addEventListener("click", function (e) {
 });
 
 
-async function detectLanguage() {
+function detectLanguage() {
     const saved = sessionStorage.getItem("lang");
     if (saved) return saved;
 
-    try {
-        const res = await fetch("https://ipapi.co/json/");
-        const data = await res.json();
-        if (data.country_code === "IT") return "it";
-        if (["PE", "ES", "MX", "AR", "CL", "CO"].includes(data.country_code)) return "es";
-        return "en";
-    } catch {
-        const nav = navigator.language.split("-")[0];
-        return ["es", "en", "it"].includes(nav) ? nav : "es";
-    }
+    const lang = navigator.language.split("-")[0];
+    return ["es", "en", "it"].includes(lang) ? lang : "es";
 }
 
 document.addEventListener("DOMContentLoaded", async () => {
     const res = await fetch("./assets/language/lang.json");
     translations = await res.json();
 
-    const lang = await detectLanguage();
+    const lang = detectLanguage();
     setLanguage(lang);
 
     document.querySelectorAll("[data-lang]").forEach(btn => {
