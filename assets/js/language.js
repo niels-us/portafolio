@@ -57,7 +57,7 @@ document.addEventListener("click", function (e) {
 });
 
 
-function detectLanguage() {
+async function detectLanguage() {
     const saved = sessionStorage.getItem("lang");
     if (saved) return saved;
 
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const res = await fetch("./assets/language/lang.json");
     translations = await res.json();
 
-    const lang = detectLanguage();
+    const lang = await detectLanguage();
     setLanguage(lang);
 
     document.querySelectorAll("[data-lang]").forEach(btn => {
