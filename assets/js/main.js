@@ -123,6 +123,7 @@
         scrollto(window.location.hash)
       }
     }
+    setTimeout(() => window.scrollTo(0, 1), 100);
   });
 
   /**
