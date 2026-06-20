@@ -169,6 +169,10 @@
         layoutMode: 'fitRows'
       });
 
+      select('.portfolio-container img', true).forEach(img => {
+        img.addEventListener('load', () => portfolioIsotope.layout());
+      });
+
       let portfolioFilters = select('#portfolio-flters li', true);
 
       on('click', '#portfolio-flters li', function(e) {
