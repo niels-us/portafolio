@@ -516,10 +516,6 @@ section {
 }
 
 .facts .count-box:hover {
-  -moz-transform: scale(1.1) rotate(0deg);
-  -webkit-transform: scale(1.1) rotate(0deg);
-  -o-transform: scale(1.1) rotate(0deg);
-  -ms-transform: scale(1.1) rotate(0deg);
   transform: scale(1.1) rotate(0deg);
 }
 
@@ -550,10 +546,6 @@ section {
 
 .skills img:hover {
   z-index: 10;
-  -moz-transform: scale(1.4) rotate(-5deg);
-  -webkit-transform: scale(1.4) rotate(-5deg);
-  -o-transform: scale(1.4) rotate(-5deg);
-  -ms-transform: scale(1.4) rotate(-5deg);
   transform: scale(1.4) rotate(-5deg);
 }
 
@@ -656,10 +648,6 @@ section {
 }
 
 .resume .resume-card:hover {
-  -moz-transform: scale(1.03) rotate(0deg);
-  -webkit-transform: scale(1.03) rotate(0deg);
-  -o-transform: scale(1.03) rotate(0deg);
-  -ms-transform: scale(1.03) rotate(0deg);
   transform: scale(1.03) rotate(0deg);
 }
 
@@ -785,10 +773,6 @@ section {
 }
 
 .portfolio .portfolio-wrap:hover img {
-  -moz-transform: scale(1.2) rotate(0deg);
-  -webkit-transform: scale(1.2) rotate(0deg);
-  -o-transform: scale(1.2) rotate(0deg);
-  -ms-transform: scale(1.2) rotate(0deg);
   transform: scale(1.2) rotate(0deg);
 }
 
@@ -940,10 +924,6 @@ section {
 }
 
 .services .icon-box:hover {
-  -moz-transform: scale(1.05) rotate(0deg);
-  -webkit-transform: scale(1.05) rotate(0deg);
-  -o-transform: scale(1.05) rotate(0deg);
-  -ms-transform: scale(1.05) rotate(0deg);
   transform: scale(1.05) rotate(0deg);
 }
 
@@ -1055,10 +1035,6 @@ section {
 }
 
 .testimonials .swiper-slide:hover {
-  -moz-transform: scale(1.05) translatey(10px) rotate(0deg);
-  -webkit-transform: scale(1.05) translatey(10px) rotate(0deg);
-  -o-transform: scale(1.05) translatey(10px) rotate(0deg);
-  -ms-transform: scale(1.05) translatey(10px) rotate(0deg);
   transform: scale(1.05) translatey(10px) rotate(0deg);
 }
 
@@ -1393,10 +1369,6 @@ section {
   clear: right;
   /* margin: 0; */
   margin-bottom: 8px;
-  -moz-transform: scale(.8);
-  -webkit-transform: scale(.8);
-  -o-transform: scale(.8);
-  -ms-transform: scale(.8);
   transform: scale(.8);
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
@@ -1405,10 +1377,6 @@ section {
 }
 
 .redes-flotantes img:hover {
-  -moz-transform: scale(1.1) rotate(6deg);
-  -webkit-transform: scale(1.1) rotate(6deg);
-  -o-transform: scale(1.1) rotate(6deg);
-  -ms-transform: scale(1.1) rotate(6deg);
   transform: scale(1.1) rotate(6deg);
 }
 
